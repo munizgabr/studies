@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        green: {
+                            btn: '#C8E451',
+                            water: '#2bb3b1',
+                            pool: '#4CBFBB',
+                            btn_hover: '#95e251'
+                        },
+                        blue: {
+                            sky: '#E6EFF6'
+                        }
+                    },
+                    fontFamily: {
+                        roboto: ['Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif']
+
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-blue-sky flex justify-center items-center h-screen">
+    <main class="flex flex-col px-6">
+        <div class="bg-white flex flex-col justify-between p-6">
+            <h1 class="font-roboto text-green-pool ">Join our comunity!</h1>
+            <p class="font-roboto text-green-btn">30-day hassie-free money back guarantee</p>
+            <p class="font-roboto text-slate-500">Gain access to our full library of tutorials along with expert code reviews. Perfect for any develops who are serious about honing their skills.</p>
+        </div>
+        <div class="bg-green-water flex flex-col justify-between p-6">
+            <span class="font-roboto text-white font-bold">Monthly subscription</span>
+            <p class="font-roboto text-white font-bold">$29 <span class="font-roboto text-slate-300">per month</span></p>
+            <p class="font-roboto text-white">Full access for less then $1 a day</p>
+            <button class="font-roboto self-center bg-green-btn w-full p-2 rounded text-white hover:bg-green-btn-hover shadow-2xl">Sign up</button>
+        </div>
+        <footer class="bg-green-pool flex flex-col justify-between p-6">
+            <p class="font-roboto text-white">Why us</p>
+            <ul>
+                <li class="font-roboto text-white">Tutorials by industry experts</li>
+                <li class="font-roboto text-white">Peer & expert code review</li>
+                <li class="font-roboto text-white">Coding exercises</li>
+                <li class="font-roboto text-white">Access to our GitHub repos</li>
+                <li class="font-roboto text-white">Community Forum</li>
+                <li class="font-roboto text-white">Flashcard decks</li>
+                <li class="font-roboto text-white">New videos every week</li>
+            </ul>
+        </footer>
+    </main>
+
+</body>
+
+</html>
