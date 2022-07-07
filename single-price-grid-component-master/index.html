@@ -35,31 +35,35 @@
     </script>
 </head>
 
-<body class="bg-blue-sky flex justify-center items-center h-screen">
-    <main class="flex flex-col px-6">
-        <div class="bg-white flex flex-col justify-between p-6">
-            <h1 class="font-roboto text-green-pool ">Join our comunity!</h1>
-            <p class="font-roboto text-green-btn">30-day hassie-free money back guarantee</p>
-            <p class="font-roboto text-slate-500">Gain access to our full library of tutorials along with expert code reviews. Perfect for any develops who are serious about honing their skills.</p>
+<body class="bg-blue-sky flex justify-center items-center h-screen ">
+    <main class="flex flex-col px-6 md: inline-block md:w-1/3">
+        <div>
+            <div class="bg-white flex flex-col justify-between p-6 rounded-t-md ">
+                <h1 class="font-roboto text-green-pool font-bold mb-2">Join our comunity!</h1>
+                <p class="font-roboto text-green-btn mb-2">30-day hassie-free money back guarantee</p>
+                <p class="font-roboto text-slate-500">Gain access to our full library of tutorials along with expert code reviews. Perfect for any develops who are serious about honing their skills.</p>
+            </div>
         </div>
-        <div class="bg-green-water flex flex-col justify-between p-6">
-            <span class="font-roboto text-white font-bold">Monthly subscription</span>
-            <p class="font-roboto text-white font-bold">$29 <span class="font-roboto text-slate-300">per month</span></p>
-            <p class="font-roboto text-white">Full access for less then $1 a day</p>
-            <button class="font-roboto self-center bg-green-btn w-full p-2 rounded text-white hover:bg-green-btn-hover shadow-2xl">Sign up</button>
+        <div class="md: grid grid-cols-2">
+            <div class="bg-green-water flex flex-col justify-between p-6">
+                <span class="font-roboto text-white font-bold">Monthly subscription</span>
+                <p class="font-roboto text-white font-bold text-3xl mt-4">$29 <span class="font-roboto text-slate-300 text-sm">per month</span></p>
+                <p class="font-roboto text-white text-sm">Full access for less then $1 a day</p>
+                <button class="font-roboto self-center bg-green-btn w-full p-3 rounded text-white hover:bg-green-btn-hover shadow-2xl mt-8 font-bold">Sign up</button>
+            </div>
+            <footer class="bg-green-pool flex flex-col justify-between p-6 rounded-b-md">
+                <p class="font-roboto text-white font-bold mb-3">Why us</p>
+                <ul>
+                    <li class="font-roboto text-white text-sm">Tutorials by industry experts</li>
+                    <li class="font-roboto text-white text-sm">Peer & expert code review</li>
+                    <li class="font-roboto text-white text-sm">Coding exercises</li>
+                    <li class="font-roboto text-white text-sm">Access to our GitHub repos</li>
+                    <li class="font-roboto text-white text-sm">Community Forum</li>
+                    <li class="font-roboto text-white text-sm">Flashcard decks</li>
+                    <li class="font-roboto text-white text-sm">New videos every week</li>
+                </ul>
+            </footer>
         </div>
-        <footer class="bg-green-pool flex flex-col justify-between p-6">
-            <p class="font-roboto text-white">Why us</p>
-            <ul>
-                <li class="font-roboto text-white">Tutorials by industry experts</li>
-                <li class="font-roboto text-white">Peer & expert code review</li>
-                <li class="font-roboto text-white">Coding exercises</li>
-                <li class="font-roboto text-white">Access to our GitHub repos</li>
-                <li class="font-roboto text-white">Community Forum</li>
-                <li class="font-roboto text-white">Flashcard decks</li>
-                <li class="font-roboto text-white">New videos every week</li>
-            </ul>
-        </footer>
     </main>
 
 </body>
