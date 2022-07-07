@@ -1,6 +1,6 @@
-# Frontend Mentor - Single price grid component solution - designed by Gabriel Muniz
+# Frontend Mentor - Four card feature section solution
 
-This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -16,15 +16,15 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
-This project was very simple to develop using Tailwind css. I'm an amateur dev yet and I'm very interest to learn more then I know.
+
 ### The challenge
 
 Users should be able to:
 
-- View the optimal layout for the component depending on their device's screen size
-- See a hover state on desktop for the Sign Up call-to-action
+- View the optimal layout for the site depending on their device's screen size
 
 ### Screenshot
 
