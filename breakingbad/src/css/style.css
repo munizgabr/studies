@@ -10,4 +10,11 @@
     .font-header{
        font-family:'font-bb';
     }
-}
+}    
+    
+        .bg-scene{
+            background-image: url(../images/fumaca.png);
+            background-repeat: no-repeat;
+            background-position: 0 0 0 10px;
+        }
+    
