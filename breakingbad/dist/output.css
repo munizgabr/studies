@@ -771,10 +771,6 @@ video {
   background-repeat: repeat;
 }
 
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
-
 .p-2 {
   padding: 0.5rem;
 }

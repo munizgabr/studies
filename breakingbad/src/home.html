@@ -4,9 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/output.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <style>
     #more {display: none;}
+    .swiper {
+        width: 600px;
+        height: 300px;
+}
   </style>
+  <title>Home</title>
 </head>
 <body>
     <header class="bg-gradient-to-r from-lime-900 via-lime-600 to-lime-500 inline-block w-full align-top py-8">
@@ -50,7 +61,8 @@
            <hr class="border border-black">
             <div>
                 <h2 class="text-center font-bold text-white">Jesse Pinkman</h2>
-                <img class="border 4 text-white">Jesse Bruce Pinkman is a citizen of Alaska and a retired career criminal, best known as the business and meth cook partner of his former chemistry teacher Walter White in the Albuquerque methamphetamine drug trade as a manufacturer and distributor. Prior to working with Walt, Jesse worked as a small-time methamphetamine user, manufacturer, and dealer.</p>
+                <img class="border-4 border-white" src="../src/images/jesse pinkman.jpg" alt="Gus Fring">
+                <p class="mt-4 text-white">Jesse Bruce Pinkman is a citizen of Alaska and a retired career criminal, best known as the business and meth cook partner of his former chemistry teacher Walter White in the Albuquerque methamphetamine drug trade as a manufacturer and distributor. Prior to working with Walt, Jesse worked as a small-time methamphetamine user, manufacturer, and dealer.</p>
             </div>
            <hr class="border border-black">
             <div>
@@ -75,6 +87,35 @@
                 <span>Ozimandias</span>
                 <iframe width="100%" height="100%" src="https://youtube.com/embed/XZ0Gr6HWbbg"  frameborder="0" allowfullscreen ng-show="showvideo""></iframe>
             </div>
+            <!-- <div class="swiper">
+              
+                <div class="swiper-wrapper">
+                  
+                  <div class="swiper-slide">
+                    <span>Ozimandias</span>
+                        <iframe width="100%" height="100%" src="https://youtube.com/embed/XZ0Gr6HWbbg"  frameborder="0" allowfullscreen ng-show="showvideo""></iframe>
+                  </div>
+                  <div class="swiper-slide">
+                    <span>Ozimandias</span>
+                        <iframe width="100%" height="100%" src="https://youtube.com/embed/XZ0Gr6HWbbg"  frameborder="0" allowfullscreen ng-show="showvideo""></iframe>
+                  </div>
+                  <div class="swiper-slide">
+                    <span>Ozimandias</span>
+                        <iframe width="100%" height="100%" src="https://youtube.com/embed/XZ0Gr6HWbbg"  frameborder="0" allowfullscreen ng-show="showvideo""></iframe>
+                  </div>
+
+                </div>
+                
+                <div class="swiper-pagination"></div>
+              
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                
+                <div class="swiper-scrollbar"></div>
+            </div>
+        -->
         </section>
     </main>
     <footer>
@@ -97,5 +138,37 @@
         moreText.style.display = "inline";
       }
     }
+
+        import Swiper from 'swiper';
+        // import Swiper styles
+        import 'swiper/css';
+
+        import Swiper, { Navigation, Pagination } from 'swiper';
+        // import Swiper and modules styles
+        import 'swiper/css';
+        import 'swiper/css/navigation';
+        import 'swiper/css/pagination';
+
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        }); 
     </script>
 </html>
