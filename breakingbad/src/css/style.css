@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family:'font-bb' ;
+        src: url('/fonts/Heart Breaking Bad.otf') format('opentype');
+    }
+    .font-header{
+       font-family:'font-bb';
+    }
+}    
+    
+        .bg-scene{
+            background-image: url(../images/fumaca.png);
+            background-repeat: no-repeat;
+            background-position: 0 0 0 10px;
+        }
+    

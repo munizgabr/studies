@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <style>
+    #more {display: none;}
+    .swiper {
+        width: 600px;
+        height: 300px;
+}
+  </style>
+  <title>Home</title>
+</head>
+<body>
+    <header class="bg-gradient-to-r from-lime-900 via-lime-600 to-lime-500 inline-block w-full align-top py-8">
+        <div class="flex flex-row items-center">
+            <div class="mr-4"><img src="../src/images/bblogo.png" alt="Logo Breaking Bad"></div>
+            <div>
+                <ul class="flex flex-row space-x-4 p-2">
+                    <li class="text-white  font-bold text-md font-serif"><a href="#">Home</a></li>
+                    <li class="text-white  font-bold text-md font-serif"><a href="#">Characters</a></li>
+                    <li class="text-white  font-bold text-md font-serif"><a href="#">Episodes</a></li>
+                    <li class="text-white  font-bold text-md font-serif"><a href="#">Quotes</a></li>
+                    <li class="text-white  font-bold text-md font-serif"><a href="#">Deaths</a></li>
+                </ul>
+            </div>    
+        </div>
+    </header>
+    <main class="p-8">
+        <div class="flex flex-col space-y-4">
+            <div>
+                <img class="border-8 border-lime-600 rounded-md" src="../src/images/BB_.jpg" alt="">
+            </div>
+            <div>
+                <h1 class="text-xl font-black mb-10">Breaking Bad history</h1>
+                <p class="">Breaking Bad is an American neo-Western crime drama television series created and produced by Vince Gilligan. Set and filmed in Albuquerque, New Mexico, it tells the story of Walter White (Bryan Cranston), an underpaid, overqualified, and dispirited high-school chemistry teacher who is struggling with a recent diagnosis of stage-three lung cancer, turning to a life of crime and partnering with his former student Jesse Pinkman (Aaron Paul) to produce and distribute crystal meth to secure his family's financial future before he dies, while navigating the dangers of the criminal underworld. The show aired on AMC from January 20, 2008, to September 29, 2013, consisting of five seasons for a total of 62 episodes.
+
+                    Among the show's co-stars are Anna Gunn and RJ Mitte as Walter's wife Skyler and son Walter Jr., and Betsy Brandt and Dean Norris as Skyler's sister Marie Schrader and her husband Hank, a DEA agent. Others include Bob Odenkirk as Walter's and Jesse's sleazy lawyer Saul Goodman, Jonathan Banks as private investigator and fixer Mike Ehrmantraut, and Giancarlo Esposito as drug kingpin Gus Fring. The final season introduces Jesse Plemons as the criminally ambitious Todd Alquist, and Laura Fraser as Lydia Rodarte-Quayle, a cunning business executive secretly managing Walter's global meth sales for her company.<span id="dots">...</span><span id="more">
+                    
+                    Breaking Bad's first season received generally positive reviews, while the rest of its run received unanimous critical acclaim. Since its conclusion, the show has been lauded by critics as one of the greatest television series of all time.[9] It had fair viewership in its first three seasons, but the fourth and fifth seasons saw a moderate rise in viewership when it was made available on Netflix just before the fourth season premiere. Viewership increased more drastically upon the premiere of the second half of the fifth season in 2013. By the time that the series finale aired, it was among the most-watched cable shows on American television. The show received numerous awards, including 16 Primetime Emmy Awards, eight Satellite Awards, two Golden Globe Awards, two Peabody Awards, two Critics' Choice Awards, and four Television Critics Association Awards. Cranston won the Primetime Emmy Award for Outstanding Lead Actor in a Drama Series four times, while Aaron Paul won the Primetime Emmy Award for Outstanding Supporting Actor in a Drama Series three times; Anna Gunn won the Primetime Emmy Award for Outstanding Supporting Actress in a Drama Series twice. In 2013, Breaking Bad entered the Guinness World Records as the most critically acclaimed TV show of all time.[10]
+                    
+                    A sequel film, El Camino: A Breaking Bad Movie, starring Paul was released on Netflix and in theaters on October 11, 2019.[11] Better Call Saul, a prequel series featuring Odenkirk, Banks, and Esposito reprising their Breaking Bad roles, as well as many others in guest and recurring appearances, debuted on AMC on February 8, 2015, and is currently airing its sixth and final season.</span></p>
+                    <button class="shadow-2xl rounded-md bg-lime-600 text-white px-4 py-1 mt-4 hover:bg-lime-900" onclick="readMore()" id="myBtn">Read More</button>
+            </div>
+        </div>
+        <div class="bg-gradient-to-br from-white to-lime-800 rounded-lg rounded-b-none border border-lime-800 border-b-lime-800 mt-8 p-8 text-center font-bold font-serif text-lg"><h2>Characters</h2></div>
+        <div class="flex flex-col space-y-6 bg-lime-800 p-8 rounded-t-none rounded-lg">
+            <div class="">
+                <h2 class="text-center font-bold text-white">Walter White - Heisenber</h2>
+                <img class="border-4 border-white" src="../src/images/heisenberg.jpg" alt="Heisenberg">
+                <p class="mt-4 text-white">Walter Hartwell "Walt" White Sr., also known by his clandestine pseudonym and business moniker/alias Heisenberg, is a chemist and drug kingpin from Albuquerque, New Mexico. Walt is a former underachieving high school chemistry teacher at J. P. Wynne High School who, after being diagnosed with terminal lung cancer, started manufacturing chemically pure crystal methamphetamine to provide for his family (his wife Skyler, son Walt Jr., and infant daughter Holly) upon his death. Knowing nothing about the drug trade, Walt enlists the aid of his former student, Jesse Pinkman, to sell the meth he produces.</p>
+            </div>
+           <hr class="border border-black">
+            <div>
+                <h2 class="text-center font-bold text-white">Jesse Pinkman</h2>
+                <img class="border-4 border-white" src="../src/images/jesse pinkman.jpg" alt="Gus Fring">
+                <p class="mt-4 text-white">Jesse Bruce Pinkman is a citizen of Alaska and a retired career criminal, best known as the business and meth cook partner of his former chemistry teacher Walter White in the Albuquerque methamphetamine drug trade as a manufacturer and distributor. Prior to working with Walt, Jesse worked as a small-time methamphetamine user, manufacturer, and dealer.</p>
+            </div>
+           <hr class="border border-black">
+            <div>
+                <h2 class="text-center font-bold text-white">Gustavo Fring</h2>
+                <img class="border-4 border-white" src="../src/images/GusFring.jpg" alt="Gus Fring">
+                <p class="mt-4 text-white">Gustavo "Gus" Fring, also referred to as the Chicken Man and the Chilean, is a Chilean-American restaurant entrepreneur that uses his stores as a front for the drug trade. He is the proprietor of Los Pollos Hermanos, a highly successful fried chicken restaurant chain. Gus is also a public booster for the Drug Enforcement Administration office in Albuquerque, New Mexico, as well as a member of the hospital board. Despite outward appearances, Gus is a major drug kingpin initially affiliated with the Cartel, who uses his restaurants as a front for methamphetamine distribution throughout the American southwest, before later fronting his own drug empire. Like Walter White, Gus is a criminal who "hides in plain sight," using his anti-drug philanthropy to conceal his true nature.</p>
+            </div>
+            <div class="group grid grid-cols-2 border border-b-4 shadow-2xl border-white rounded-full p-6 bg-lime-600 hover:bg-lime-800">
+                <span class="text-white font-bold m-auto">See more</span>
+                <a href="#">
+                    <div class="rounded-full bg-white flex justify-center items-center m-auto w-fit shadow-3xl hover:bg-lime-500 border border-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="#000" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                        </svg>
+                    </div>
+                </a>
+            </div>   
+        </div>
+        <section style="background-image: url(../src/images/fumaca.png);" class="mt-4 bg-repeat grid justify-center items-center bg-scene">
+            <span class="text-center font-bold">Bests Scenes</span>
+            <div class="flex flex-col justify-center items-center">
+                <span>Ozimandias</span>
+                <iframe width="100%" height="100%" src="https://youtube.com/embed/XZ0Gr6HWbbg"  frameborder="0" allowfullscreen ng-show="showvideo""></iframe>
+            </div>
+            <!-- <div class="swiper">
+              
+                <div class="swiper-wrapper">
+                  
+                  <div class="swiper-slide">
+                    <span>Ozimandias</span>
+                        <iframe width="100%" height="100%" src="https://youtube.com/embed/XZ0Gr6HWbbg"  frameborder="0" allowfullscreen ng-show="showvideo""></iframe>
+                  </div>
+                  <div class="swiper-slide">
+                    <span>Ozimandias</span>
+                        <iframe width="100%" height="100%" src="https://youtube.com/embed/XZ0Gr6HWbbg"  frameborder="0" allowfullscreen ng-show="showvideo""></iframe>
+                  </div>
+                  <div class="swiper-slide">
+                    <span>Ozimandias</span>
+                        <iframe width="100%" height="100%" src="https://youtube.com/embed/XZ0Gr6HWbbg"  frameborder="0" allowfullscreen ng-show="showvideo""></iframe>
+                  </div>
+
+                </div>
+                
+                <div class="swiper-pagination"></div>
+              
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                
+                <div class="swiper-scrollbar"></div>
+            </div>
+        -->
+        </section>
+    </main>
+    <footer>
+        <div class="flex justify-center items-center text-white font-bold bg-gradient-to-r from-lime-900 via-lime-600 to-lime-500">&COPY; Designed by Gabriel Muniz</div>
+    </footer>
+</body>
+<script>
+    function readMore() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+
+        import Swiper from 'swiper';
+        // import Swiper styles
+        import 'swiper/css';
+
+        import Swiper, { Navigation, Pagination } from 'swiper';
+        // import Swiper and modules styles
+        import 'swiper/css';
+        import 'swiper/css/navigation';
+        import 'swiper/css/pagination';
+
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        }); 
+    </script>
+</html>
