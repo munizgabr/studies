@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>LP arbovile</title>
+    <style>
+        body{
+            background-image: url("images/Landing\ Page\ Indique\ um\ Amigo\ Arboville.jpg");
+            margin: 0 auto;
+            border: 1px solid red;
+            height: 1623px;
+            background-size: 1897px;                                
+        }
+        .top{
+            border: 1px solid blue;
+            height: 998px;
+        }
+        .btn{
+            border: 1px solid white;
+            color: white;
+            padding: 5px 45px;
+        }
+        input[type="submit"]{
+            background-color: #01313b;
+        }
+        .swiper {
+            width: 600px;
+            height: 300px;
+        }
+        .swiper-img .swiper-button-prev, .swiper-img .swiper-button-next{
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blue: {
+                            form: '#006278',
+                            pool: '#2c8092',
+                            footer: '#0087a7'
+                        },
+                        gray:{
+                            select: '#e8fbe9',
+                            input:'#dcebec'
+                        }
+                    },
+                    fontFamily: {
+                        roboto: ['Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif']
+
+                    },
+                    backgroundImage:{
+                        'topo': "url('./images/bg-top.jpg')"
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/functions.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    <section class="top bg-topo">
+        <div class="w-7/12 mx-auto grid grid-cols-2 space-x-10 m-36">
+            <div class="flex flex-col justify-center items-center pl-10">
+                <h1 class="text-white font-bold uppercase self-start text-xl">Indique o arbovile para o seu amigo</h1>
+                <span class="text-white text-md">Se o seu amigo visitar a Central de Vendas Arboville, você ganha um brinde</span>
+            </div>
+            <div class="bg-blue-form opacity-80 py-2 px-6 rounded-xl shadow-xl">
+                <h2 class="text-white font-bold uppercase text-center text-lg mb-2">Participe</h2>
+                <form class="flex flex-col space-y-4" action="">
+                    <input class="bg-gray-input w-full rounded-lg text-center p-2" type="text" name="name" id="name" placeholder="NOME">
+                    <input class="bg-gray-input w-full rounded-lg text-center p-2" type="email" name="email" id="mail" placeholder="EMAIL">
+                    <div class="grid grid-cols-2 space-x-4">
+                        <input class=" bg-gray-input rounded-lg text-center p-2"  type="tel" name="tel" id="phone" placeholder="TELEFONE">
+                        <input class="maskcpf bg-gray-input rounded-lg text-center p-2" autocomplete="off" maxlength="14" type="text" name="cpf" id="cpf" placeholder="CPF">
+                    </div>
+                    <div class="text-center text-white uppercase text-xl font-bold"><span>Indique <span class="font-thin">seu </span>amigo</span></div>
+                    <input class="bg-gray-input w-full rounded-lg text-center p-2" type="text" name="name" id="name" placeholder="NOME">
+                    <input class="bg-gray-input w-full rounded-lg text-center p-2" type="email" name="email" id="mail" placeholder="EMAIL">
+                    <div class="grid grid-cols-2 space-x-4">
+                        <input class=" bg-gray-input rounded-lg text-center p-2"  type="tel" name="tel" id="phone" placeholder="TELEFONE">
+                        <input class="maskcpf bg-gray-input rounded-lg text-center p-2" autocomplete="off" maxlength="14" type="text" name="cpf" id="cpf-amigo" placeholder="CPF">
+                    </div>
+                    <div class="flex flex-row justify-between">
+                        <select class="bg-gray-select rounded-md text-gray-400" name="reward" id="reward">
+                            <option class="bg-gray-select rounded-md text-gray-700" value="initial">Escolha sua recompensa</option>
+                            <option class="bg-gray-select rounded-md text-gray-700" value="toalha">Toalha</option>
+                        </select>
+                        <input class="uppercase rounded-md btn" type="submit" value="enviar">
+                    </div>
+                    <p class="text-white">Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses. Ao informar meus dados, eu concordo com a Política de Privacidade.</p>
+                </form>
+                
+            </div>
+        </div>
+        <div class="swiper swiper-img">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="./images/toalha.png" alt=""></div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="grid grid-cols-2 w-7/12 mx-auto pt-6 px-16">
+            <img class="block mx-auto" src="./images/arboville-logo.png" alt="logo Arboville">
+            <img class="block mx-auto" src="./images/terra-simao-logo.png" alt="logo Arboville">
+        </div>
+    </section>
+    <section class="w-7/12 mx-auto bg-white">
+       <div class="block mx-auto py-8"><span class=" text-blue-footer flex justify-center text-3xl uppercase">Como <span class="font-bold">funciona</span></span></div>
+    <div class="grid grid-cols-3 space-x-4">
+        <div class="bg-blue-pool rounded-2xl flex flex-col justify-center items-center pt-4 pb-8">
+            <div><img src="./images/step1.png" alt=""></div>
+            <div>
+                <p class="text-white pl-5 pr-4 mt-3">1. Você convida os seus amigos para conhecerem o Arboville e visitarem a Central de Vendas.</p>
+            </div>
+        </div>
+
+        <div class="bg-blue-pool rounded-2xl flex flex-col justify-center items-center pt-4 pb-8">
+            <div><img src="./images/step2.png" alt=""></div>
+            <div>
+                <p class="text-white pl-5 pr-4 mt-3">2. Seus amigos recebem o convite para conhecer a Central de Vendas Arboville.</p>
+            </div>
+        </div>
+
+        <div class="bg-blue-pool rounded-2xl flex flex-col justify-center items-center pt-4 pb-8">
+            <div><img src="./images/step3.png" alt=""></div>
+            <div>
+                <p class="text-white pl-5 pr-4 mt-3">3. Se, seus amigos visitarem a Central de Vendas Arboville, você ganha o brinde escolhido.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer class="flex justify-center bg-blue-footer mt-10">
+        <span class="uppercase text-white font-semibold py-4 text-lg">Consulte o regulamento</span>
+    </footer>
+</body>
+
+</html>
