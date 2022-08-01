@@ -4,33 +4,33 @@ const cpf = document.querySelector('.maskcpf')
 
 
 cpf.addEventListener('keypress', () => {
-let cpfLenght = cpf.value.length
+    let cpfLenght = cpf.value.length
 
-if(cpfLenght === 3 || cpfLenght === 7){
-    cpfLenght.value += '.'
-}else if(cpfLenght === 11){
-    cpfLenght.value += '-'
-}
+    if (cpfLenght === 3 || cpfLenght === 7) {
+        cpfLenght.value += '.'
+    } else if (cpfLenght === 11) {
+        cpfLenght.value += '-'
+    }
 })
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'vertical',
     loop: true,
-  
+
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+        el: '.swiper-pagination',
     },
-  
+
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-  
+
     // And if we need scrollbar
     scrollbar: {
-      el: '.swiper-scrollbar',
+        el: '.swiper-scrollbar',
     },
-  });
+});
