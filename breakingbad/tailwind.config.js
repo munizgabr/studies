@@ -4,6 +4,9 @@ module.exports = {
     extend: {
       'header':['font-bb']
     },
+    backgroundImage:{
+      'topo': "url('../src/images/pool.jpg')"
+  }
   },
   plugins: [],
 }
