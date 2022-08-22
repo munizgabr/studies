@@ -8,25 +8,79 @@
     <title>Login</title>
 </head>
 
-<body class="bg-gray-100">
-    <div class="max-w-md">
-        <h2 class="font-bold text-center text-lg mb-">Login</h2>
-        <div class="bg-white shadow-md rounded-md p-4">
-            <div>
-                <label class="text-sm text-gray-800 mb-2" for="email">E-mail</label>
-                <input class="w-full bg-gray-50 border border text-gray-800 " type="text" name="email" id="email">
-            </div>
+<body class="bg-gray-100 h-screen">
+    <form action="https://httpdump.app/dumps/0e25fc45-0b45-41b7-aa4a-9b182fdc4dac" method="post">
+        <div class="max-w-md mx-auto items-center">
+            <h2 class="font-bold text-center text-lg text-">Login</h2>
+            <div class="bg-white shadow-md rounded-md p-4">
+                <div>
+                    <label class="text-sm text-gray-800 mb-2" for="email">Nome</label>
+                    <input class="bg-gray-100 border border-gray-800 rounded-lg px-3 py-2 mt-2 mb-2 w-full bg-gray-50 border border text-gray-800" type="text" name="name" id="nome">
+                </div>
 
-            <div>
-                <label class="text-sm text-gray-800 mb-2" for="password">Password</label>
-                <input type="text" name="password" id="password">
-            </div>
-
-            <div>
-                <button>Login</button>
+                <div>
+                    <label class="text-sm text-gray-800 mb-2" for="email">E-mail</label>
+                    <input class="bg-gray-100 border border-gray-800 rounded-lg px-3 py-2 mt-2 mb-2 w-full bg-gray-50 border border text-gray-800" type="text" name="mail" id="email">
+                </div>
+    
+                <div>
+                    <label class="text-sm text-gray-800 mb-2" for="password">Password</label>
+                    <input class="bg-gray-100 border border-gray-800 rounded-lg px-3 py-2 mt-2 mb-2 w-full bg-gray-50 border border text-gray-800" type="text" name="passwd" id="password">
+                </div>
+    
+                <div>
+                    <input class="bg-gray-100 border border-gray-800 rounded-lg px-3 py-2 mt-2 mb-2" type="submit" id="btn" value="Enviar">
+                </div>
             </div>
         </div>
-    </div>
+    </form>
+    <script>
+        // document.addEventListener("DOMContentLoaded", function(e) {
+        // function doPost(url, body){
+        //     console.log("body = ", body)
+        //     request.open("POST", url, true)
+        // }
+
+        // function cadastraUsuario(){
+            
+        //     event.preventDefault()
+     
+        //     let nome = document.getElementById("nome").value
+        //     let email = document.getElementById("email").value
+            
+        //     console.log(nome)
+        //     console.log(email)
+
+        //     let body = {
+        //     "name" : nome,
+        //     "email" : email 
+        //     }
+
+        //     doPost(url, body)
+        //     }
+        // })
+
+    //    Exemplo requisição post
+    document.addEventListener("DOMContentLoaded",function(e){
+        let ajax = new XMLHttpRequest
+        let nome = document.getElementById("nome")
+        let email = document.getElementById("email")
+
+        ajax.open("GET", "https://httpdump.app/dumps/0e25fc45-0b45-41b7-aa4a-9b182fdc4dac", true)
+        ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+
+        ajax.send("nome =" + nome)
+        ajax.send("nome =" + nome)
+
+        ajax.onreadestatechange = function(){
+            if (ajax.readyState == 4 && ajax.status == 200){
+                let data = ajax.responseText
+                console.log(data)
+            }
+        }
+    } )
+
+    </script>
 </body>
 
 </html>
