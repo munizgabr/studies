@@ -1,32 +1,114 @@
-
-.container{
+/* 
+.container {
     display: grid;
-    grid-template-columns: 100px 50px 80px 200px;
-    grid-template-rows: 80px 100px 100px;
-    grid-gap: 20px 10px;
+    background-color: #333;
+    border: 5px solid red;
+    padding: 15px;
+    grid-template-columns: 50px auto 10%;
+    height: 40vh;
+    grid-template-rows: 70% 30%;
+    gap: 5px;
 }
 
-.box1{
-    /* grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4; */
+.container div {
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}
+ */
 
-    grid-column: 1/5;
-    grid-row: 3/4;
 
-    /* grid are */
-    /* grid-area: 3/1/4/5; */
+ /* Template areas */
+
+
+ /* .container {
+    display: grid;
+    background-color: #333;
+    border: 5px solid red;
+    padding: 15px;
+    gap: 5px;
+    grid-template-areas: 
+    'header header header header'
+    'content content content sidebar'
+    'footer footer footer footer';
 }
 
-.box2{
-    /* grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3; */
-    grid-column: 3/5;
-    grid-row: 1/3;
+.container div {
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}
 
-    /* grid area */
-    /* grid-area: 1/3/3/5; */
+#header {
+    grid-area: header;
+}
+
+#sidebar {
+    grid-area: sidebar;
+}
+
+#content {
+    grid-area: content;
+    height: 50vh;
+}
+
+#footer {
+    grid-area: footer;
+} */
+
+
+/* Alignment */
+
+/* .container {
+    display: grid;
+    background-color: #333;
+    border: 5px solid red;
+    padding: 15px;
+    gap: 5px;
+    grid-template-columns: auto auto auto;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container div {
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+} */
+
+.container {
+    display: grid;
+    grid-template-rows: 60px 40px 200px 60px;
+    grid-template-areas: 
+    "topo topo topo"
+    "menu menu menu"
+    "principal principal secundaria"
+    "rodape rodape rodape";
+    grid-gap: 5px 10px;
+}
+.topo{
+    grid-area: topo;
+    background-color: cyan;
+    border: 1px solid;
+}
+.menu{
+    grid-area: menu;
+    background-color: cyan;
+    border: 1px solid;
+}
+.principal {
+    grid-area: principal;
+    background-color: cyan;
+    border: 1px solid;
+}
+.secundaria {
+    grid-area: secundaria;
+    background-color: cyan;
+    border: 1px solid;
+}
+.rodape {
+grid-area: rodape;
+background-color: cyan;
+border: 1px solid;
 }
